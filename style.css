@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'general sans';
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#loader{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #0b0b0b;
+  padding: 20vh 5vw;
+}
+#line-count{
+  display: flex;
+  gap: 1vw;
+}
+#line-count h4,h5{
+  font-size: 5vw;
+}
+#line-count h4{
+ /*  background-color: red; */
+  width: 7vw;
+  margin-right: 0.5vw;
+}
+.line h3{
+
+  font-size: 5.5vw;
+  animation-name: anime;
+  animation-duration:2.5s;
+  animation-delay: 0.3;
+  animation-iteration-count: infinite;
+}
+.line{
+ /*  background-color: red; */
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.line h1{
+  font-size:8vw;
+  line-height: 7.6vw;
+  text-transform: uppercase;
+}
+@keyframes anime {
+  0%{
+    font-family: "general sans";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  60%{
+    font-family: "Roboto";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+  60%{
+    font-family: "general sans";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  60%{
+    font-family: "Roboto";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }                                 
+  
+  60%{
+    font-family: "Roboto";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+  100%{
+    font-family: "Roboto";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+}
+
+#main{
+  position: relative;
+  background-color: #0b0b0b;
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
